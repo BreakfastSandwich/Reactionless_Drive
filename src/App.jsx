@@ -1,14 +1,17 @@
-import HomePage from "./components/HomePage"
+import { Outlet } from 'react-router-dom';
+import Nav from './components/NavTabs.jsx';
 import './components/style/app.css'
 
 function App() {
-  
-
+  // The Outlet component will conditionally swap between the different pages according to the URL
   return (
     <>
-      <HomePage />
+      <Nav />
+      <main className="mx-3">
+        <Outlet />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

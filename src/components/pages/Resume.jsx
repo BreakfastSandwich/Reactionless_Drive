@@ -1,12 +1,12 @@
 import React from "react";
-import  '../style/resume.module.css'
+import ResumeCSS from '../style/resume.module.css'
 
 
 export default function Contact() {
     return (
-      <div className=".container">
-        <h1>Contact Page</h1>
-        <p  className=".body">
+      <div className={ResumeCSS.container}>
+        <h1>Resume Page</h1>
+        <p  className={ResumeCSS.container}>
           Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
           molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
           magna a ultrices. Aenean pellentesque placerat lacus imperdiet
