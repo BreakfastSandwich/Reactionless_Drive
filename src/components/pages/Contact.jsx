@@ -1,25 +1,84 @@
 import React from "react";
 import ContactCSS from '../style/contact.module.css'
+import { useState } from 'react';
 
 
-export default function Contact() {
+function Contact() {
+ 
+  const [Name, setName] = useState('');
+  const [Email, setEmail] = useState('');
+  const [Message, setMessage] = useState('');
+
+  const handleNameInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { name, value } = e.target;
+
+    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+    return name === 'Name' ? setName(value) : alert(`Please provide your Name`);
+  };
+
+  const handleEmailInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { email, value } = e.target;
+
+    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+    return email === 'Email' ? setEmail(value) : alert(`Please provide your Email`);
+  };
+
+  const handleMessageInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { message, value } = e.target;
+
+    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+    return message === 'Message' ? setEmail(value) : alert(`Please provide your Email`);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you ${Name}, we will contact you shortly`);
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
+
+ 
     return (
       <div>
         <h1>Contact Page</h1>
         <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+          <div className="container text-center">
+             <form className="form" onSubmit={handleFormSubmit}>
+              <input
+                value={Name}
+                name="Name"
+                onChange={handleNameInputChange}
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                value={Email}
+                name="Email"
+                onChange={handleEmailInputChange}
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                value={Message}
+                name="Message"
+                onChange={handleMessageInputChange}
+                type="text"
+                placeholder="Message"
+              />
+              <button type="submit">
+                Submit
+              </button>
+            </form> 
+          </div>
+
         </p>
       </div>
     );
   }
-  
+
+ export default Contact;
