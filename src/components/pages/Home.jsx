@@ -1,3 +1,7 @@
+import React from "react";
+import HomeCSS from '../style/home.module.css'
+
+
 export default function Home() {
     return (
       <div>
