@@ -10,28 +10,24 @@ function Contact() {
   const [Message, setMessage] = useState('');
 
   const handleNameInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+       const { name, value } = e.target;
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+    
     return name === 'Name' ? setName(value) : alert(`Please provide your Name`);
   };
 
-  const handleEmailInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { email, value } = e.target;
+  // const handleEmailInputChange = (e) => {
+    //   const { email, value } = e.target;
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return email === 'Email' ? setEmail(value) : alert(`Please provide your Email`);
-  };
+  
+  //   return email === 'Email' ? setEmail(value) : alert(`Please provide your Email`);
+  // };
 
-  const handleMessageInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { message, value } = e.target;
+  // const handleMessageInputChange = (e) => {
+  //   const { message, value } = e.target;
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return message === 'Message' ? setEmail(value) : alert(`Please provide your Email`);
-  };
+  //   return message === 'Message' ? setEmail(value) : alert(`Please provide your Email`);
+  // };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -59,14 +55,14 @@ function Contact() {
               <input
                 value={Email}
                 name="Email"
-                onChange={handleEmailInputChange}
+                onChange={handleNameInputChange}
                 type="text"
                 placeholder="Email"
               />
               <input
                 value={Message}
                 name="Message"
-                onChange={handleMessageInputChange}
+                onChange={handleNameInputChange}
                 type="text"
                 placeholder="Message"
               />

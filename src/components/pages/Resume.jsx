@@ -5,8 +5,8 @@ import ResumeCSS from '../style/resume.module.css'
 export default function Contact() {
     return (
       <div className={ResumeCSS.container}>
-        <h1>Resume Page</h1>
-        <p  className={ResumeCSS.container}>
+        <p className={ResumeCSS.header}>Resume Page</p>
+        <p  className={ResumeCSS.body}>
           Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
           molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
           magna a ultrices. Aenean pellentesque placerat lacus imperdiet
