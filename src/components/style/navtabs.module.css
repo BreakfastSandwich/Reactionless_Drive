@@ -6,16 +6,15 @@
     cursor: pointer;
     font-weight: 500;
     background-color: #888;
-
-font-family: 'Tektur', sans-serif;
+    font-family: 'Tektur', sans-serif;
 }
 
-.logo>p{
+.logo>p {
     background-color: #888;
 }
 
-.logo:hover{
-    text-shadow:   3px 3px 18px rgb(215, 247, 247), 8px 8px 5px rgb(42, 43, 44);
+.logo:hover {
+    text-shadow: 3px 3px 18px rgb(215, 247, 247), 8px 8px 5px rgb(42, 43, 44);
     font-weight: 600;
     color: white;
     font-family: 'Audiowide', sans-serif;
@@ -29,11 +28,11 @@ font-family: 'Tektur', sans-serif;
     cursor: pointer;
     font-weight: 500;
 
-font-family: 'Tektur', sans-serif;
+    font-family: 'Tektur', sans-serif;
 }
 
-.logo>link:hover{
-    text-shadow:   3px 3px 18px rgb(215, 247, 247), 8px 8px 5px rgb(42, 43, 44);
+.logo>link:hover {
+    text-shadow: 3px 3px 18px rgb(215, 247, 247), 8px 8px 5px rgb(42, 43, 44);
     font-weight: 600;
     color: white;
     font-family: 'Audiowide', sans-serif;
@@ -45,21 +44,23 @@ font-family: 'Tektur', sans-serif;
     align-content: center;
     border-bottom: 1px solid white;
     background-color: #888;
+    align-items: center;
+    height: 5rem;
 }
 
-.nav{
+.nav {
     background: #888;
-    padding: 1rem .5rem;
+    padding: .5rem;
     display: flex;
     justify-content: end;
     list-style: none;
     margin-right: .5rem;
     color: #0d6efd;
+    align-content: center;
+    align-items: center;
 
 }
 
-.nav:hover{
+.nav:hover {
     color: #0a58ca;
 }
-
-

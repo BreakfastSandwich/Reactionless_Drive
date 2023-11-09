@@ -5,19 +5,22 @@ import { useState } from 'react';
 
 function Contact() {
  
-  const [Name, setName] = useState('');
-  const [Email, setEmail] = useState('');
-  const [Message, setMessage] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleNameInputChange = (e) => {
        const { name, value } = e.target;
-
+       console.log(name)
     
     return name === 'Name' ? setName(value) : alert(`Please provide your Name`);
   };
 
   // const handleEmailInputChange = (e) => {
-    //   const { email, value } = e.target;
+  //    console.log(e.target) 
+  //    const { email, value } = e.target;
+      
+  //     console.log(email)
 
   
   //   return email === 'Email' ? setEmail(value) : alert(`Please provide your Email`);
@@ -55,7 +58,7 @@ function Contact() {
               <input
                 value={Email}
                 name="Email"
-                onChange={handleNameInputChange}
+                onChange={handleEmailInputChange}
                 type="text"
                 placeholder="Email"
               />
