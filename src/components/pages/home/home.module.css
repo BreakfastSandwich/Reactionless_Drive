@@ -1,0 +1,28 @@
+.container {
+    background: #bbbbbb;
+    margin-top: 8rem;
+    padding: 3rem;
+  
+}
+
+.header {
+    font-size: 3rem;
+    font-family: 'Audiowide', sans-serif;
+    color: rgb(15, 71, 121);
+    font-weight: 800;
+    text-shadow: 8px 8px 15px rgb(232, 232, 233), 3px 3px 5px rgb(15, 71, 247);
+    margin-bottom: 2rem;
+
+    /* background: blue; */
+    /* color: blueviolet; */
+}
+
+
+.body {
+    font-size: 1.5rem;
+    font-family: 'Audiowide', sans-serif;
+    color: rgb(333);
+    font-weight: 800;
+    text-shadow: 8px 8px 10px rgb(232, 232, 233);
+    margin-bottom: 2rem;
+}

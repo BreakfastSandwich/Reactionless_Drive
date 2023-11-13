@@ -5,12 +5,12 @@ import './components/style/index.css'
 
 
 import App from './App.jsx';
-import Error from './components/pages/Error.jsx';
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
-import About from './components/pages/About';
-import Portfolio from './components/pages/Portfolio';
-import Resume from './components/pages/Resume';
+import Error from './components/pages/error/Error.jsx';
+import Home from './components/pages/home/Home.jsx';
+import Contact from './components/pages/contact/Contact.jsx';
+import About from './components/pages/about/About.jsx';
+import Portfolio from './components/pages/portfolio/Portfolio.jsx';
+import Resume from './components/pages/resume/Resume.jsx';
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeCSS from '../style/resume.module.css'
+import ResumeCSS from './resume.module.css'
 
 
 export default function Contact() {

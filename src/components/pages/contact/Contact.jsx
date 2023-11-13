@@ -1,5 +1,5 @@
 import React from "react";
-import ContactCSS from '../style/contact.module.css'
+import ContactCSS from './contact.module.css'
 import { useState } from 'react';
 
 
@@ -9,32 +9,24 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleNameInputChange = (e) => {
-       const { name, value } = e.target;
-       console.log(name)
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+   
     
-    return name === 'Name' ? setName(value) : alert(`Please provide your Name`);
-  };
+    if(name === 'Name') {
+     return setName(value);
+    } else if(name === 'Email') {
+     return setEmail(value);
+    } else {
+     return setMessage(value);
+    }
+ 
 
-  // const handleEmailInputChange = (e) => {
-  //    console.log(e.target) 
-  //    const { email, value } = e.target;
-      
-  //     console.log(email)
-
-  
-  //   return email === 'Email' ? setEmail(value) : alert(`Please provide your Email`);
-  // };
-
-  // const handleMessageInputChange = (e) => {
-  //   const { message, value } = e.target;
-
-  //   return message === 'Message' ? setEmail(value) : alert(`Please provide your Email`);
-  // };
+};
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you ${Name}, we will contact you shortly`);
+    alert(`Thank you ${name}, we will contact you shortly at ${email}`);
     setName('');
     setEmail('');
     setMessage('');
@@ -51,21 +43,21 @@ function Contact() {
               <input
                 value={Name}
                 name="Name"
-                onChange={handleNameInputChange}
+                onChange={handleInputChange}
                 type="text"
                 placeholder="Name"
               />
               <input
                 value={Email}
                 name="Email"
-                onChange={handleEmailInputChange}
+                onChange={handleInputChange}
                 type="text"
                 placeholder="Email"
               />
               <input
                 value={Message}
                 name="Message"
-                onChange={handleNameInputChange}
+                onChange={handleInputChange}
                 type="text"
                 placeholder="Message"
               />
