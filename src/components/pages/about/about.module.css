@@ -1,0 +1,19 @@
+.container {
+    
+    margin: 10rem 4rem;
+    
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Tektur', sans-serif;
+    margin: 4rem;
+}
+
+.body {
+    margin: 4rem;
+}

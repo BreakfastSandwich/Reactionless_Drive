@@ -5,7 +5,7 @@ import AboutCSS from './about.module.css'
 export default function About() {
     return (
       <div className={AboutCSS.container}>
-        <h1 className={AboutCSS.header}>About Page</h1>
+        <div className={AboutCSS.header}>About Page</div>
         <p className={AboutCSS.body}>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
