@@ -39,7 +39,8 @@ function Contact() {
         <h1>Contact Page</h1>
         <p>
           <div className={ContactCSS.container}>
-            <div className={ContactCSS.header}>I'd love to hear from you</div>
+            <div className={ContactCSS.header}>I'd love to hear from you. <br />
+            Please fill out the form below.</div>
              <form className={ContactCSS.form} onSubmit={handleFormSubmit}>
               <input
               className={ContactCSS.Name}
@@ -48,6 +49,7 @@ function Contact() {
                 onChange={handleInputChange}
                 type="text"
                 placeholder="Name"
+                required={true}
               />
               <input
               className={ContactCSS.Email}
@@ -56,6 +58,7 @@ function Contact() {
                 onChange={handleInputChange}
                 type="text"
                 placeholder="Email"
+                required={true}
               />
               <input
               className={ContactCSS.Message}
