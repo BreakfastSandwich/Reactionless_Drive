@@ -4,9 +4,10 @@
     padding: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
+    width: 80%;
   
 }
 

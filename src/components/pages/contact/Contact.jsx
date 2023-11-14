@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 function Contact() {
  
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [Name, setName] = useState('');
+  const [Email, setEmail] = useState('');
+  const [Message, setMessage] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -26,7 +26,7 @@ function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you ${name}, we will contact you shortly at ${email}`);
+    alert(`Thank you ${Name}, we will contact you shortly at ${Email}`);
     setName('');
     setEmail('');
     setMessage('');
@@ -38,8 +38,8 @@ function Contact() {
       <div>
         <h1>Contact Page</h1>
         <p>
-          <div className="container text-center">
-             <form className="form" onSubmit={handleFormSubmit}>
+          <div className={ContactCSS.container}>
+             <form className={ContactCSS.form} onSubmit={handleFormSubmit}>
               <input
                 value={Name}
                 name="Name"
