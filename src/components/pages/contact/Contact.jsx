@@ -39,8 +39,10 @@ function Contact() {
         <h1>Contact Page</h1>
         <p>
           <div className={ContactCSS.container}>
+            <div className={ContactCSS.header}>I'd love to hear from you</div>
              <form className={ContactCSS.form} onSubmit={handleFormSubmit}>
               <input
+              className={ContactCSS.Name}
                 value={Name}
                 name="Name"
                 onChange={handleInputChange}
@@ -48,6 +50,7 @@ function Contact() {
                 placeholder="Name"
               />
               <input
+              className={ContactCSS.Email}
                 value={Email}
                 name="Email"
                 onChange={handleInputChange}
@@ -55,13 +58,14 @@ function Contact() {
                 placeholder="Email"
               />
               <input
+              className={ContactCSS.Message}
                 value={Message}
                 name="Message"
                 onChange={handleInputChange}
                 type="text"
                 placeholder="Message"
               />
-              <button type="submit">
+              <button className={ContactCSS.Submit} type="submit">
                 Submit
               </button>
             </form> 
