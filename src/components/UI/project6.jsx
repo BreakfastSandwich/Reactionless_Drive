@@ -4,11 +4,11 @@ export default function Project6() {
 
     return (
       <div className={ProjectCSS.card}>
-        <div className={ProjectCSS.header}></div>
-        <div className={ProjectCSS.images}></div>
+        <div className={ProjectCSS.header}>ReadMe Generator</div>
+        <div className={ProjectCSS.images}><img src="" alt="" /></div>
         <div className={ProjectCSS.about}></div>
-        <a href="" className={ProjectCSS.gitHubBtn}></a>
-        <a href="" className={ProjectCSS.deployedBtn}></a>
+        <a href="" className={ProjectCSS.gitHubBtn}>Check out the Code</a>
+        <a href="" className={ProjectCSS.deployedBtn}>Check out the Deployed Site</a>
       </div>
     );
   }

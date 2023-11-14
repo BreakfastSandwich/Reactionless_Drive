@@ -18,7 +18,7 @@ function NavTabs() {
             </div>
             <ul className={NavTabsCSS.nav} >
 
-             
+
                 <li className={NavTabsCSS.logo}>
                     <Link
                         to="/About"
@@ -46,14 +46,11 @@ function NavTabs() {
                     </Link>
                 </li>
 
-                <li className={NavTabsCSS.logo} >
-                    <Link
-                        to="/Resume"
-                        className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Resume
-                    </Link>
+
+                <li className={NavTabsCSS.logo} type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Resume
                 </li>
+
 
             </ul>
         </div>

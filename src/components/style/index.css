@@ -41,3 +41,21 @@
     font-size: 3.2em;
     line-height: 1.1;
   }
+
+  .modalImg {
+    height: 75vh;
+    object-fit: contain;
+    object-position: center;
+  }
+
+.modal{
+  width:100%;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-self: center;
+  -bs-modal-width: 0px !important;
+}
+
+  .modal-content {
+    width: 50vw;
+  }
