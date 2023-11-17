@@ -1,6 +1,6 @@
 import React from "react";
 import AboutCSS from './about.module.css'
-import cssIMG from '../../../assets/css_img'
+import cssIMG from '../../../assets/css_img.png'
 import ReactIMG from '../../../assets/react_img'
 import HTMLIMG from '../../../assets/html_img'
 import JavaScriptIMG from '../../../assets/js_img'
