@@ -1,5 +1,5 @@
 .container {
-    background: #bbbbbb;
+    background: #CDD1DF;
     margin-top: 8rem;
     padding: 3rem;
     display: flex;
@@ -7,8 +7,14 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    width: 80%;
-  
+    flex: 1 1 80%;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .hero {
@@ -21,11 +27,10 @@
 .name {
     font-size: 4rem;
     font-family: 'Audiowide', sans-serif;
-    color: rgb(15, 71, 121);
+    color: #0B216F;
     font-weight: 800;
-    text-shadow: 8px 8px 15px rgb(232, 232, 233), 3px 3px 5px rgb(15, 71, 247);
+    text-shadow: 8px 8px 15px #6D7288, 3px 3px 5px #38564A;
     margin-bottom: 2rem;
-
 }
 
 
@@ -39,10 +44,9 @@
 }
 
 .image>img {
-    height: 40rem;
+    height: 30rem;
     width: auto;
     object-fit: contain;
     object-position: center;
-    /* background-image: url(../../../assets/Profile.jpg); */
     z-index: 10;
 }

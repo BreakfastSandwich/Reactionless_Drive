@@ -1,7 +1,8 @@
 .main {
-    background-color: #f3eded;
+    background-color: #6D7288;
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
     /* height: 90vh; */
 }

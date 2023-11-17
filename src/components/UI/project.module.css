@@ -1,7 +1,7 @@
 .card {
 background-color: #999;
 margin: .5rem;
-height: 10rem;
+height: 35rem;
 border-radius: .2rem;
 }
 
@@ -9,12 +9,14 @@ border-radius: .2rem;
 margin: .5rem;
 }
 
-.images{
-
+.images>img{
+height: 28rem;
+object-fit: cover;
+object-position: center;
 }
 
 .about{
-
+background: #666;
 }
 
 .gitHubBtn{
