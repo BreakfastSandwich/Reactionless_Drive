@@ -1,14 +1,14 @@
 import React from "react";
 import AboutCSS from './about.module.css'
 import cssIMG from '../../../assets/css_img.png'
-import ReactIMG from '../../../assets/react_img'
-import HTMLIMG from '../../../assets/html_img'
-import JavaScriptIMG from '../../../assets/js_img'
-import MongoIMG from '../../../assets/mongo_img'
-import NodeIMG from '../../../assets/node_img'
-import NpmIMG from '../../../assets/npm_img'
-import SqlIMG from '../../../assets/sql_img'
-import BootstrapIMG from '../../../assets/bootstrap_img'
+import ReactIMG from '../../../assets/react_img.png'
+import HTMLIMG from '../../../assets/html_img.png'
+import JavaScriptIMG from '../../../assets/js_img.png'
+import MongoIMG from '../../../assets/mongo_img.png'
+import NodeIMG from '../../../assets/node_img.png'
+import NpmIMG from '../../../assets/npm_img.png'
+import SqlIMG from '../../../assets/sql_img.png'
+import BootstrapIMG from '../../../assets/bootstrap_img.png'
 
 
 export default function About() {
